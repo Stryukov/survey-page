@@ -13,17 +13,17 @@ $("#lang").change(function(){
 
 $("#cfm").click(function () {
     if ($('#phone').is(":visible")) {
-        if ("#phone:empty") {
-            //infoError('#info', 'Enter phone number');
+
+        if ((!$("#inputPhone").val()) || ($("#inputPhone").val().length<15)) {
+            infoError('#info', 'Enter correct phone number');
             return false;
         }
-
         $('#phone').hide();
         $('#code').show();
         return false;
     }
     if ($('#code').is(":visible")) {
-        if ("#code:empty") {
+        if (!$("#inputCode").val()) {
             $('#info').html('Enter code from SMS');
             infoError('#info', 'Enter code from SMS');
             return false;
