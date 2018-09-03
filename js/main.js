@@ -28,7 +28,7 @@ $("#cfm").click(function () {
             infoError('#info', 'Enter code from SMS');
             return false;
         }
-        $(location).attr('href','./hello.html');
+        $(location).attr('href','./hello/index.html');
         return false;
     }
 });
