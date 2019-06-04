@@ -1,60 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Title</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+    <link rel="icon" href="img/favicon.ico">
 
-<div id="sLang" class="form" style="">
-    <form class="form text-center shadow">
-<!--        <div class="row" >
-            <img class="mb-4" src="img/bootstrap-solid.svg" alt="" width="72" height="72">
-            <hr noshade style="height: 50px; width: 1px;">
-            <img class="mb-4" src="img/bootstrap-solid.svg" alt="" width="72" height="72">
-        </div> -->
-        <h1 class="h3 mb-3 font-weight-normal">Select langauge:</h1>
+    <title>Бесплатный Wi-Fi в ПКГО</title>
+    
+	<link type="text/css" href="css/floating-labels.css" rel="stylesheet">  
+	<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" >
+	<link type="text/css" href="css/flag-icon.min.css" rel="stylesheet">
+	<link type="text/css" href="css/wifi.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/popper.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="js/wifi.js"></script>
+  </head>
 
-        <div class="">
-            <select class="custom-select custom-select-lg mb-3" id="lang" required>
-                <option value="" >Choose...</option>
-                <option name="lang" value="EN">English</option>
-                <option name="lang" value="RU">Russian</option>
-            </select>
-            <div class="invalid-feedback">
-                Please select a valid language.
-            </div>
+  <body style="color: #fff">
+  <div class="container">
+    <div id="reg" class="row">
+		<div class="dropdown lang">
+		  <button id="btn-lang" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		    <span class="flag-icon flag-icon-ru"> </span> RU
+		  </button>
+		  <div class="dropdown-menu" id="lang" style="min-width: 0;">
+		    <a class="dropdown-item" style="padding: .25rem 1.4rem;" href="#en"><span class="flag-icon flag-icon-us"> </span> EN</a>
+		    <a class="dropdown-item" style="padding: .25rem 1.4rem;" href="#ru"><span class="flag-icon flag-icon-ru"> </span> RU</a>
+		  </div>
+		</div>            
+        <div class="text-center mb-4">
+         <div class="row logos">
+          <img src="img/pkgo.svg" alt="" width="72" height="72">
+		  <div class="vl"></div>
+          <img src="img/iks.svg" alt="" width="72" height="72">
+         </div>
+          <h1 id="title" class="h3 mb-3 font-weight-normal">Добро пожаловать в Петропавловск-Камчатский</h1>
+          <p id="content" class="content">Вы находитесь в зоне действия бесплатной общественной сети Wi-Fi, организованной администрацией Петропавловск-Камчатского городского округа совместно с ООО "ИнтерКамСервис".</p>
+          <ul class="services">
+          	<li><a href="#"><img src="img/wifi.svg" alt="" width="40" height="40"> <span id="svc1">Зона покрытия Wi-Fi</span></a></li>
+          	<li><a href="#"><img src="img/location.svg" alt="" width="40" height="40"> <span id="svc2">Туристическая карта города</span></a></li>
+          </ul>
+          <p id="info">Для доступа к сети «Интернет» пройдите идентификацию.</p>
         </div>
-
-    </form>
-</div>
-
-<div id="auth" class="form" style="display: none;">
-    <form class="form shadow">
-        <div id="info" class="alert alert-danger" role="alert" style="display: none;"></div>
-        <div id="phone">
-            <h1 class="h3 mb-3 font-weight-normal">Enter phone number</h1>
-            <label for="inputPhone" class="sr-only">Phone</label>
-            <input type="tel" pattern="7[0-9]{10}" id="inputPhone" class="form-control" placeholder="7 987 654 43 21" required autofocus>
+      <form class="form-signin">
+        <div class="form-label-group">
+          <input type="tel" id="inputTel" class="form-control" placeholder="Номер телефона" required autofocus>
+          <label id="iph" for="inputTel">Введите Ваш номер телефона</label>
         </div>
-        <div id="code" style="display: none;">
-            <h1 class="h3 mb-3 font-weight-normal">Enter code from SMS</h1>
-            <label for="inputCode" class="sr-only">Code</label>
-            <input type="text" id="inputCode" class="form-control" placeholder="Code">
-        </div>
-        <button id="cfm" class="btn btn-lg btn-primary btn-block btn-shadow-blue" style="margin-top: 25px;" type="button">Confirm</button>
-    </form>
-</div>
-
-</body>
+        <button id="btn" class="btn btn-lg btn-primary btn-block" type="submit">Пройти идентификацию</button>
+      </form>
+    </div>
+    <div id="call" class="row">
+    	<p id="content2" class="content">Совершите БЕСПЛАТНЫЙ звонок с телефона который Вы ввели на предоставленный номер. Вызов будет сброшен и в течение 10 секунд доступ будет предоставлен.</p>
+    	<form class="form-call">
+    		<button id="btn-call" class="btn btn-lg btn-primary btn-block" type="button">+74152305105</button>
+    	</form>
+    </div>
+  </div>
+  </body>
 </html>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="js/jquery.mask.min.js"></script>
-<script src="js/main.js"></script>

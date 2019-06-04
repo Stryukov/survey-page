@@ -1,0 +1,25 @@
+{
+	"RU": [
+		{
+			"title": "Добро пожаловать в Петропавловск-Камчатский",
+			"content": "Вы находитесь в зоне действия бесплатной общественной сети Wi-Fi, организованной администрацией Петропавловск-Камчатского городского округа совместно с ООО &laquo;ИнтерКамСервис&raquo;.",
+			"svc1": "Зона покрытия Wi-Fi",
+			"svc2": "Туристическая карта города",
+			"info": "Для доступа к сети «Интернет» пройдите идентификацию.",
+			"iph": "Введите Ваш номер телефона",
+			"btn": "Пройти идентификацию",
+			"content2": "Совершите БЕСПЛАТНЫЙ звонок с телефона который Вы ввели на предоставленный номер. Вызов будет сброшен и в течение 10 секунд доступ будет предоставлен."
+		}],
+	"EN": [
+		{
+			"name": "EN",
+			"title": "Lorem ipsum dolor sit amet, consectetur",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",
+			"svc1": "Lorem ipsum dolor sit amet",
+			"svc2": "Lorem ipsum dolor sit amet",
+			"info": "Lorem ipsum dolor sit",
+			"iph": "Lorem ipsum dolor sit amet",
+			"btn": "Lorem ipsum dolor",
+			"content2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet."
+		}]
+}

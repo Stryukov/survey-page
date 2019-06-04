@@ -1,0 +1,52 @@
+.lang {
+    right: 10px;
+    top: 10px;
+    position: absolute;	
+}
+.vl {
+    border-left: 1px solid #fff;
+    height: 72px;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+}
+.logos {
+	margin: 10px auto;
+    width: 165px;	
+}
+.content {
+	margin: 0px 10px;
+    text-align: justify;
+    word-break: break-word;
+}
+li {
+    list-style-type: none; 
+}
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+.services > li > a {
+	color: #fff;
+    text-decoration: none;
+}
+.services {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+p {
+	text-align: justify;
+    word-break: break-word;
+    margin: 0px 10px;
+}
+#call {
+    display: none;
+}
+.form-call {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+    margin: 0 auto;    
+}
